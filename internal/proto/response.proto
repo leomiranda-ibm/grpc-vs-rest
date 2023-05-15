@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+option go_package = "./internal/pb";
+
+message Users {
+  string firstName = 1;
+  string lastName = 2;
+  string address = 3;
+}
+
+message Response {
+  repeated Users users = 1;
+}
+
+message Null {
+}
+
+service ServerGrpc {
+  rpc GetUsers(Null) returns (Response) {};
+}
