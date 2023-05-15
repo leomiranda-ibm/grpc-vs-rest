@@ -1,6 +1,8 @@
 # POC GRPC vs HTTP
 The proposal of this PoC is discover how fast gRPC can be comparing to REST.
 
+> ⚠️ Important: the result can be quite faster using gRPC when the services is not running on the same machine
+
 ## Turn On Servers
 To turn on the servers you can use the makefile shortcut.
 
